@@ -1,0 +1,25 @@
+---
+title: "Pedigree and Population Resources"
+author: "HuongMeeks"
+date: "October 12, 2017"
+always_allow_html: yes
+---
+
+# Location
+
+The Pedigree and Population Resource (PPR) has just moved to the Huntsman Cancer Institute Primary Children's and Families' Cancer Research Center at 2000 Circle of Hope Drive, Salt Lake City, UT 84112.
+
+```{r Set up, echo = FALSE}
+library(leaflet)
+
+updb.map <- leaflet() %>%
+  addTiles()
+
+updb.map <- updb.map %>%  
+  addMarkers(lng = -111.83, lat = 40.77, 
+             popup = "<a href='https://healthcare.utah.edu/huntsmancancerinstitute/research/updb/'>Pedigree and Population Resource</a>")
+
+updb.map
+
+```
+
